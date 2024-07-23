@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+/* util class */
+
+.flex{
+    display: flex;
+}
+
+.flex-fit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover{
+    cursor: pointer;
+}
+
+/* nav  and its components */
+
+nav{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    background-color: black;
+    height: 6vh;
+    align-items: center;
+}
+
+.home{
+    margin-left: 1vw;
+    opacity: 0.8.5;
+    font-size: small;
+    font-style: inherit;
+}
+
+.profile{
+    margin-right: 2vw;
+    background-color: #fff;
+    
+    height: 4vh;
+    line-height: 4vh;
+    padding-left: 0.3vw;
+    padding-right: 1vw;
+    border-radius: 1rem;
+    font-size: small;
+    gap: 0.5vw;
+}
+.name{
+    color:#000;
+}
+
+.dp{
+    height: 25px;
+    width: 25px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* ui and its components */
+
+.ui{
+    height: 94vh;
+    width: 100vw;
+}
+
+/* left part */
+
+.left-part{
+    height: 94vh;
+    width:18vw;
+    background-color: #000;
+}
+
+.new-item{
+    height: 10vh;
+    width: 18vw;
+    background-color: rgba(28, 33, 33, 0.981);
+}
+
+.new-btn{
+    background-color: rgba(243, 243, 265);
+    color: rgba(28, 33, 33, 0.981) ;
+    height: 6vh;
+    line-height: 6vh;
+    width: 14vw;
+    border-radius: .5rem;
+    padding-left: 1vw;
+    font-size: large;
+}
+
+
+
+.deshboard{
+    margin-top: 0.2vh;
+    color: #fff;
+    height: auto;
+    padding-top:1rem ;
+    padding-bottom:1rem ;
+    width: 18vw;
+    background: rgba(28, 33, 33, 0.981);
+    
+}
+.deshboard div{
+    margin-left: 1rem;
+}
+.func{
+    width: 14vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deshboard ul li{
+    list-style: none;
+    margin-top: 1.5vh;
+    margin-left: 3.1rem;
+    
+}
+.drop-down{
+    transition: height 0.3s ease;
+}
+
+
+/* right part */
+
+.right-part{
+    height: 94vh;
+    width: 82vw;
+}
+
+.welcome{
+    font-size:2.3rem;
+    opacity: 0.8;
+    margin-left: 5vw;
+    margin-top: 6vh;
+}
+
+.pp-and-username{
+    font-size:2.3rem;
+    opacity: 0.8;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    line-height: 7rem;
+    gap: 1.5vw;
+}
+.pp{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background:lightgray;
+}
+
+.table{
+    margin-left: 4vw;
+    margin-top: 1vh;
+    width: 76vw;
+    height: 66vh;
+    font-family: sans-serif;
+}
+.error{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    background: rgb(238, 193, 193);
+    height: 6vh;
+    color: rgb(113, 58, 58);
+    border: 1px solid red;
+    padding-left: 1vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.error p {
+    height: 6vh;
+    line-height: 6vh;
+}
+
+.table-text p{
+    color: gray;
+    margin-top: 0.3vh;
+}
+.table table{
+    width: 76vw;
+}
+.table-ui{
+    height: 60vh;
+    overflow: scroll;
+}
+th{
+    text-align: left;
+    background:lightgray;
+}
+
+table,th,td{
+    border: 1px solid #000;
+    
+}
+table{
+    border-collapse:collapse ;
+    
+}
+td, th{
+    padding-left: 1vw;
+    
+}
+tr{
+    height: 5vh;
+}
+tbody{
+    color: rgba(74, 66, 66, 0.793);
+}
+button{
+    border: none;
+    border-radius: 5%;
+}
+button:hover{
+    cursor: pointer;
+    
+}
+
+.controls{
+    width: 10vw;
+}
+.edit-btn{
+    color: white;
+    background: #0b03fc;
+    height: 4vh;
+    width: 4vw;
+    margin-right:1vw ;
+}
+
+.delete-btn{
+    color:  white;
+    background: #fc8403;
+    height: 4vh;
+    width: 4vw;
+}
+
+@media screen and (max-width: 600px){
+
+    /*sorry bhaiyas jyada responsive nahi bana paaya ..thoda or time hota to sayad 😕 */
+    body{
+        .ui{display: flex;
+            flex-direction: column;
+        }
+        .left-part{
+            height: 94vh;
+            width:100vw;
+            background-color: #000;
+        }
+
+        .new-item, .deshboard{
+            width: auto;
+        }
+
+        .new-btn{
+            width: auto;
+            padding: .3rem;
+        }
+        
+        .func div{
+            display: flex;
+            gap:2vw;
+        }
+        .right-part{
+            width: 100vw;
+        }
+        .welcome{
+            margin-left: 2vw;
+        }
+        .pp-and-username{
+            margin-left: 2vw;
+        }
+        .table{
+            width: 100vw;
+            margin-left: 2vw;
+        }
+        .error{
+            height: 6vh;
+            width: 95vw;
+            /* display: flex; */
+            /* align-items: center; */
+            gap: 3vw;
+            /* background: rgb(238, 193, 193); */
+            /* line-height: 6vh; */
+            /* padding-left: 1vw; */
+        }
+        .error p{
+            height: 2vh;
+            margin-bottom: 0vh;
+            line-height: 2vh;
+            margin-bottom: 10px;
+        }
+       
+        .table table{
+            width: 100vw;
+        }
+    }
+}
+
